@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/Public/frc2019/roborio/arm-frc2019-linux-gnueabi/usr/include/c++/6.3.0",
+                "C:/Users/Public/frc2019/roborio/arm-frc2019-linux-gnueabi/usr/include/c++/6.3.0/arm-frc2019-linux-gnueabi",
+                "C:/Users/Public/frc2019/roborio/arm-frc2019-linux-gnueabi/usr/include",
+                "C:/Users/Public/frc2019/roborio/arm-frc2019-linux-gnueabi/usr/include/c++/6.3.0/tr1",
+                "C:/Users/Public/frc2019/roborio/arm-frc2019-linux-gnueabi/usr/lib/gcc/arm-frc2019-linux-gnueabi/6.3.0/include"
+            ],
+            "compilerPath": "C:/Users/Public/frc2019/roborio/bin/arm-frc2019-linux-gnueabi-c++.exe",
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "intelliSenseMode": "gcc-x64",
+            "configurationProvider": "vscode-wpilib",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
