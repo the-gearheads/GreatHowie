@@ -1,10 +1,3 @@
-/*----------------------------------------------------------------------------*/
-/* Copyright (c) 2017-2018 FIRST. All Rights Reserved.                        */
-/* Open Source Software - may be modified and shared by FRC teams. The code   */
-/* must be accompanied by the FIRST BSD license file in the root directory of */
-/* the project.                                                               */
-/*----------------------------------------------------------------------------*/
-
 #pragma once
 
 #include <frc/Talon.h>
@@ -16,16 +9,19 @@
 #include "commands/ArcadeDrive.h"
 #include "RobotMap.h"
 
-class DriveSubsystem: public frc::Subsystem {
- public:
+class DriveSubsystem : public frc::Subsystem
+{
+public:
   DriveSubsystem();
   void InitDefaultCommand() override;
   void Drive(double y, double rot);
- private:
+
+private:
+  // TODO: add motor invert
   frc::Talon rightBack{kRightBack};
   frc::Talon rightFront{kRightFront};
-  frc::Talon leftBack{kLeftBack};
-  frc::Talon leftFront{kLeftFront};
+  frc::Spark leftBack{kLeftBack};
+  frc::Spark leftFront{kLeftFront};
   frc::SpeedControllerGroup rightGroup{rightFront, rightBack};
   frc::SpeedControllerGroup leftGroup{leftFront, leftBack};
   frc::DifferentialDrive diffDrive{leftGroup, rightGroup};

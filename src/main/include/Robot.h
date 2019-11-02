@@ -5,13 +5,17 @@
 #include <frc/smartdashboard/SendableChooser.h>
 
 #include "OI.h"
+
 #include "commands/ArcadeDrive.h"
+
 #include "subsystems/Drive.h"
+#include "subsystems/Launcher.h"
 
 class Robot : public frc::TimedRobot
 {
 public:
   static DriveSubsystem m_drive;
+  static LauncherSubsystem m_launch;
   static OI m_oi;
 
   void RobotInit() override;

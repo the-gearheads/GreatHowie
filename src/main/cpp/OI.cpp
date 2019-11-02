@@ -5,6 +5,8 @@
 
 OI::OI()
 {
+  LTrigger.WhenActive(new LaunchLow());
+  RTrigger.WhenActive(new Retract());
 }
 
 frc::Joystick *OI::GetJoystick()

@@ -11,6 +11,7 @@
 #include <frc/smartdashboard/SmartDashboard.h>
 
 DriveSubsystem Robot::m_drive;
+LauncherSubsystem Robot::m_launch;
 OI Robot::m_oi;
 
 void Robot::RobotInit()
