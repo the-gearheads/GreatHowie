@@ -24,8 +24,8 @@ class DriveSubsystem: public frc::Subsystem {
  private:
   frc::Talon rightBack{kRightBack};
   frc::Talon rightFront{kRightFront};
-  frc::Spark leftBack{kLeftBack};
-  frc::Spark leftFront{kLeftFront};
+  frc::Talon leftBack{kLeftBack};
+  frc::Talon leftFront{kLeftFront};
   frc::SpeedControllerGroup rightGroup{rightFront, rightBack};
   frc::SpeedControllerGroup leftGroup{leftFront, leftBack};
   frc::DifferentialDrive diffDrive{leftGroup, rightGroup};
